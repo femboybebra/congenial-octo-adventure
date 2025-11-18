@@ -360,7 +360,7 @@
     height: 696px;
     overflow-y: auto;
     overflow-x: hidden;
-    padding-right: 8px;
+    padding-right: 16px;
     scrollbar-width: thin;
     scrollbar-color: #BDBDBD #F2F2F2;
 
