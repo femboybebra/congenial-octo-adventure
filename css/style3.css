@@ -17,9 +17,9 @@
     /* height: 100vh; */
     /* background-color: cadetblue; */
     margin: 0 auto;
-
-
 }
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,9 @@ height: 25px;
 border: none;
 border-bottom: 1px #333333 solid;
 font-family: Rubik-Medium;
+
 }
+
 .header__search::placeholder{
 font-family: Rubik-Regular;
     color: #828282;
@@ -138,6 +140,11 @@ font-family: Rubik-Medium;
 font-size: 24px;
 color: #333333;
 }
+.movies__h2{
+    font-family: Rubik-Medium;
+    font-size: 24px;
+    color: #333333;
+    }
 .genre__item{
 width: 280px;
 height: 208px;
@@ -218,4 +225,69 @@ margin-bottom: 10px;
 .footer_2{
     display: flex;
     padding-left: 22px;
+}
+@media (max-width:390px){
+.container{
+        width: 95%;
+    }
+    .movies__h{
+        padding-left: 50px;
+    }
+.movies{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+.header{display: flex;
+    flex-direction: column;
+}
+.header__search_btn{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form {
+    width: 300px;
+    display: flex;
+    margin-top: 40px;
+}
+
+
+.genres{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.genres__gallery{
+    display: flex;
+    flex-direction: column;
+    
+}
+.genre__item{
+    margin-top: 10px;
+    width: auto;
+}
+.movies__h2{
+    padding-left: 150px;
+    }
+.nav{
+    margin-top: 20px;
+}
+.header__logo{
+    margin-top: 0px;
+}
+
+.nav{
+margin-top: 170px;
+
+}
+.foot{
+    margin: 0px;
+    height: 100px;
+}
+.genres__gallery{
+margin-bottom: 0px;
+
+}
 }

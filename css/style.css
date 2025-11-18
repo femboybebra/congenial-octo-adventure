@@ -381,7 +381,6 @@
 
 }
 
-
 .movies::-webkit-scrollbar-thumb {
     background-color: #BDBDBD;
     border-radius: 2px;
@@ -392,3 +391,132 @@
     display: none;
 }
 
+/* Ваш существующий CSS остается как есть, добавляем media queries */
+
+/* Media query для iPhone 12 и схожих устройств */
+@media screen and (max-width: 390px) {
+    .header{
+        width: auto;
+    }
+
+
+    /* Основной контейнер movies */
+    .movies {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        margin-bottom: 20px;
+        padding-right: 8px;
+    }
+    
+    .movies__h {
+        font-size: 20px;
+        margin-bottom: 12px;
+        padding: 0 16px;
+    }
+    
+    /* Сетка фильмов */
+    .schedule__edit {
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 16px;
+    }
+    
+    /* Карточки фильмов */
+    .movies__item {
+        width: 100%;
+        max-width: 358px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .movies__item__poster {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 280/162;
+    }
+    
+    .movies__item__zagtext {
+        font-size: 18px;
+        padding-top: 16px;
+        margin-bottom: 12px;
+    }
+    
+    .movies__item__textred,
+    .movies__item__text,
+    .movies__item__textend {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    
+    .movies__item__textend {
+        padding-bottom: 16px;
+    }
+    
+    /* Описание при наведении (для мобильных - при клике) */
+    .movies_desc {
+        width: 100%;
+        max-width: 358px;
+        height: auto;
+        min-height: 300px;
+        padding: 12px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    
+    /* Изображения в карточках */
+    .movies__img1,
+    .movies__img2,
+    .movies__img3,
+    .movies__img4 {
+        padding: 30px 80px;
+        width: auto;
+        height: auto;
+        max-width: 80px;
+        max-height: 80px;
+    }
+    
+    /* Жанры */
+    .genres__gallery {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 12px;
+        margin-bottom: 40px;
+        padding: 0 16px;
+    }
+    
+    .genre__item {
+        width: 100%;
+        max-width: 358px;
+        height: 160px;
+        margin: 0 auto;
+    }
+    
+    .genre__item-emj {
+        font-size: 40px;
+    }
+    
+    .genre__item-txt {
+        font-size: 18px;
+        top: 120px;
+    }
+    
+    /* Футер */
+
+    .footer{
+        width: 390px;
+    }
+    .movies::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    .movies::-webkit-scrollbar-thumb {
+        border: 1px solid #F2F2F2;
+    }
+}
+@media screen and (max-width: 390px) {
+    .movies__item,
+    .genre__item {
+        max-width: 390px;
+    }
+}
